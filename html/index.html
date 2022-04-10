@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+   <header>
+       <div class="wrapper">
+           <div class="logo">
+               <a href="">
+                   <img src="../img/logo.png" alt="">
+               </a>
+           </div>
+           <nav>
+               <ul class="menu">
+                   <li><a class="link" href="">HOME</a></li>
+                   <li><a class="link" href="">PROPERTIES</a></li>
+                   <li><a class="link" href="">AGENTS</a></li>
+                   <li><a class="link" href="">BLOG</a></li>
+               </ul>
+               <div class="login">
+                   <button>LOG IN</button>
+               </div>
+               <div class="burger ">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+               </div>
+           </nav>
+       </div>
+
+       <div class="login-modal">
+           <div class="log-modal-content">
+            <i id="close" data-modal="login-modal" class="fa-solid fa-xmark"></i>
+            <h1>Log in</h1>
+            <div class="log-inputs">
+                <input type="Email" placeholder="Email or phone">
+                <input type="password" placeholder="Password">
+                <button>Log in</button>
+            </div>
+            <p class="reg-now">Register Now</p>
+           </div>
+       </div>
+
+       <div class="reg-modal">
+        <div class="reg-modal-content">
+         <i id="close" data-modal="reg-modal" class="fa-solid fa-xmark"></i>
+         <h1>Register</h1>
+         <div class="reg-inputs">
+             <input type="Email" placeholder="Your Email">
+             <input type="Email" placeholder="Your Phone">
+             <input type="password" placeholder="Password">
+             <input type="password" placeholder="Confirm Password">
+             <button>Register</button>
+         </div>
+         <p class="log-now">Log In</p>
+        </div>
+    </div>
+   </header>
+
+   <section class="hero">
+       <div class="wrapper">
+           <div class="hero-title">
+            <h1>
+                Easy way to find a
+                perfect property
+            </h1>
+            <p>
+                We provide a complete service for the sale,
+                purchase or rental of real estate.     
+            </p>
+           </div>
+           <div class="hero-cont">
+            
+
+           <div class="tabs">
+            <div class="tabs__nav">
+                <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Rent</button>
+                <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Buy</button>
+                <button class="tabs__nav-btn" type="button" data-tab="#tab_3">Sell</button>
+            </div>
+            <div class="tabs__content">
+                <div class="tabs__item" id="tab_1">
+                    <div class="hero-card-item">
+                        <h3>Location</h3>
+                        <p>
+                            Select Your City
+                            <i class="fa-solid fa-location-dot"></i>
+                        </p>
+                    </div>
+                    <div class="hero-card-item">
+                        <h3>Property Type</h3>
+                        <p>
+                            Choose Property Type
+                            <i class="fa-solid fa-angle-down"></i>
+                        </p>
+                    </div>
+                    <div class="hero-card-item">
+                        <h3>Price Range</h3>
+                        <p>
+                            Choose Price Range
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="tabs__item" id="tab_2">
+                    <div class="hero-card-item">
+                        <h3>Price Range</h3>
+                        <p>
+                            Choose Price Range
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </p>
+                    </div>
+                    <div class="hero-card-item">
+                        <h3>Location</h3>
+                        <p>
+                            Select Your City
+                            <i class="fa-solid fa-location-dot"></i>
+                        </p>
+                    </div>
+                    <div class="hero-card-item">
+                        <h3>Property Type</h3>
+                        <p>
+                            Choose Property Type
+                            <i class="fa-solid fa-angle-down"></i>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="tabs__item" id="tab_3">
+                    <div class="hero-card-item">
+                        <h3>Location</h3>
+                        <p>
+                            Select Your City
+                            <i class="fa-solid fa-location-dot"></i>
+                        </p>
+                    </div>
+                    <div class="hero-card-item">
+                        <h3>Price Range</h3>
+                        <p>
+                            Choose Price Range
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </p>
+                    </div>
+                    <div class="hero-card-item">
+                        <h3>Property Type</h3>
+                        <p>
+                            Choose Property Type
+                            <i class="fa-solid fa-angle-down"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+   </section>
+
+
+   <section class="countries">
+       <div class="wrapper">
+        <h1>We are available in many
+            well-known countries
+        </h1>
+           <div class="country-items">
+                <div class="country-item">
+                    <h2>America</h2>
+                </div>
+                <div class="country-item">
+                    <h2>Spain</h2>
+                </div>
+                <div class="country-item">
+                    <h2>London</h2>
+                </div>
+                <div class="country-item">
+                    <h2>France</h2>
+                </div>
+            </div>
+        </div>    
+   </section>
+
+   <section class="blog">
+       <div class="wrapper">
+           <div class="blog-title">
+               <h2>Recently Added</h2>
+               <a href="">See all</a>
+           </div>
+           <div class="blog-cards">
+
+               <div class="blog-card">
+                   <img src="../img/list1.png" alt="">
+                   <div class="blog-card-cont">
+                       <h3>103/143 West Street,
+                        Crows Nest</h3>
+                        <div class="card-cont-info">
+                            <p>10 Bedroom</p>
+                            <p>150 M</p>
+                            <p>2 Garage</p>
+                        </div>
+                        <div class="card-cont-price">
+                            <p>Posted by X Builder</p>
+                            <span>
+                                $45,454
+                            </span>
+                        </div>
+                   </div>
+               </div>
+
+               <div class="blog-card">
+                <img src="../img/list2.png" alt="">
+                <div class="blog-card-cont">
+                    <h3>103/143 West Street,
+                     Crows Nest</h3>
+                     <div class="card-cont-info">
+                         <p>10 Bedroom</p>
+                         <p>150 M</p>
+                         <p>2 Garage</p>
+                     </div>
+                     <div class="card-cont-price">
+                         <p>Posted by X Builder</p>
+                         <span>
+                             $45,454
+                         </span>
+                     </div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="../img/list3.png" alt="">
+                <div class="blog-card-cont">
+                    <h3>103/143 West Street,
+                     Crows Nest</h3>
+                     <div class="card-cont-info">
+                         <p>10 Bedroom</p>
+                         <p>150 M</p>
+                         <p>2 Garage</p>
+                     </div>
+                     <div class="card-cont-price">
+                         <p>Posted by X Builder</p>
+                         <span>
+                             $45,454
+                         </span>
+                     </div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="../img/list4.png" alt="">
+                <div class="blog-card-cont">
+                    <h3>103/143 West Street,
+                     Crows Nest</h3>
+                     <div class="card-cont-info">
+                         <p>10 Bedroom</p>
+                         <p>150 M</p>
+                         <p>2 Garage</p>
+                     </div>
+                     <div class="card-cont-price">
+                         <p>Posted by X Builder</p>
+                         <span>
+                             $45,454
+                         </span>
+                     </div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="../img/list5.png" alt="">
+                <div class="blog-card-cont">
+                    <h3>103/143 West Street,
+                     Crows Nest</h3>
+                     <div class="card-cont-info">
+                         <p>10 Bedroom</p>
+                         <p>150 M</p>
+                         <p>2 Garage</p>
+                     </div>
+                     <div class="card-cont-price">
+                         <p>Posted by X Builder</p>
+                         <span>
+                             $45,454
+                         </span>
+                     </div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="../img/list6.png" alt="">
+                <div class="blog-card-cont">
+                    <h3>103/143 West Street,
+                     Crows Nest</h3>
+                     <div class="card-cont-info">
+                         <p>10 Bedroom</p>
+                         <p>150 M</p>
+                         <p>2 Garage</p>
+                     </div>
+                     <div class="card-cont-price">
+                         <p>Posted by X Builder</p>
+                         <span>
+                             $45,454
+                         </span>
+                     </div>
+                </div>
+            </div>
+           </div>
+       </div>
+   </section>
+
+
+   <section class="hero2">
+       <div class="wrapper">
+           <div class="hero2-form">
+               <h1>Call-back Form</h1>
+               <input type="email" placeholder="Email">
+               <input type="text" placeholder="Your Name">
+               <input type="phone" placeholder="Your Phone">
+               <textarea placeholder="Your Message" cols="30" rows="10"></textarea>
+               <button type="submit">Send</button>   
+           </div>
+       </div>
+   </section>
+
+
+   <footer>
+       <div class="wrapper">
+           <div class="foot-info">
+               <img src="../img/logo.png" alt="">
+               <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                 aliquip ex ea commodo consequat.
+               </p>
+               <div class="icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <span>© 2021 . All rights reserved.</span>
+           </div>
+           <div class="foot-lists">
+               <div class="foot-list">
+                   <h5>Take a tour</h5>
+                   <ul>
+                       <li><a href="">Features</a></li>
+                       <li><a href="">Partners</a></li>
+                       <li><a href="">Pricing</a></li>
+                       <li><a href="">Product</a></li>
+                       <li><a href="">Support</a></li>
+                   </ul>
+               </div>
+               <div class="foot-list">
+                <h5>Take a tour</h5>
+                <ul>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Partners</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+           </div>
+       </div>
+   </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

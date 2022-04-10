@@ -1,0 +1,319 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 35px;
+    padding: 10px 0;
+    background-color: white;
+    z-index: 9999;
+    align-items: center;
+}
+header .wrapper{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 120px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #110229;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.link::after {
+    content: ""; 
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #110229;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s; 
+    transition: all 0.3s ease-in-out 0s; 
+}  
+.link:hover::after{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+} 
+.login{
+    margin-left: 20px;
+}
+.login button{
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 20px;
+    background: none;
+    border: 1px solid #1DAEFF;
+    color: #1DAEFF;
+    border-radius: 18px;
+    transition: 0.4s;
+}
+.burger{
+    cursor: pointer;
+    margin-left: 20px;
+    display: none;
+}
+.burger.active span:nth-child(2){
+    display: none;
+}
+.burger.active span:nth-child(1){
+    transform: translateY(2px) rotate(-45deg);
+}
+.burger.active span:nth-child(3){
+    transform: translateY(-3px) rotate(45deg);
+}
+.burger span{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 2px 0;
+    border-radius: 3px;
+    transition: 0.3s all;
+}
+.login button:hover,
+.login button:focus {
+    background-color: #1DAEFF;
+    color: white;
+} 
+
+.login-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    animation-name: modal;
+    animation-duration: 0.3s;
+    z-index: 99999;
+}
+@keyframes modal{
+    0%{
+        opacity: 0.1;
+    }
+    30%{
+        opacity: 0.3;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.login-modal.active{
+    display: block;
+}
+.log-modal-content{
+    width: 300px;
+    margin: 80px auto;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: white;
+    text-align: center;
+}
+.log-modal-content i{
+    float: right;
+    cursor: pointer;
+    font-size: 19px;
+    color: #1DAEFF;
+}
+.log-modal-content h1{
+    font-size: 26px;
+    color: #110229;
+}
+.log-inputs{
+    display: block;
+    width: 100%;
+}
+.log-inputs input{
+    width: 100%;
+    margin: 10px 0;
+    height: 20px;
+    padding: 7px 0;
+    outline: 0;
+    border-radius: 13px;
+    border: 1px solid gray;
+    text-align: center;
+    transition: 0.3s;
+}
+.log-inputs input:hover,
+.log-inputs input:focus{
+    background-color: #E1E1E1;
+}
+.log-inputs button{
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 20px;
+    background: none;
+    border: 1px solid #1DAEFF;
+    color: #1DAEFF;
+    border-radius: 18px;
+    transition: 0.4s;
+}
+.log-inputs button:hover{
+    background-color: #1DAEFF;
+    color: white;
+}
+.reg-now{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    width:130px;
+    margin: 13px auto;
+}
+
+
+.reg-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    animation-name: modal;
+    animation-duration: 0.4s;
+    z-index: 99999;
+}
+.reg-modal.active{
+    display: block;
+}
+.reg-modal-content{
+    width: 300px;
+    margin: 80px auto;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: white;
+    text-align: center;
+}
+.reg-modal-content i{
+    float: right;
+    cursor: pointer;
+    font-size: 19px;
+    color: #1DAEFF;
+}
+.reg-modal-content h1{
+    font-size: 26px;
+    color: #110229;
+}
+.reg-inputs{
+    display: block;
+    width: 100%;
+}
+.reg-inputs input{
+    width: 100%;
+    margin: 10px 0;
+    height: 20px;
+    padding: 7px 0;
+    outline: 0;
+    border-radius: 13px;
+    border: 1px solid gray;
+    text-align: center;
+    transition: 0.3s;
+}
+.reg-inputs input:hover,
+.reg-inputs input:focus{
+    background-color: #E1E1E1;
+}
+.reg-inputs button{
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 20px;
+    background: none;
+    border: 1px solid #1DAEFF;
+    color: #1DAEFF;
+    border-radius: 18px;
+    transition: 0.4s;
+}
+.reg-inputs button:hover{
+    background-color: #1DAEFF;
+    color: white;
+}
+.log-now{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    width:130px;
+    margin: 13px auto;
+}
+@media screen and (max-width:1024px) {
+    header .wrapper{
+        width: 80%;
+    }
+}
+@media screen and (max-width:920px) {
+    header .wrapper{
+        width: 83%;
+    }
+}
+@media screen and (max-width:768px) {
+    header .wrapper{
+        width: 90%;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        flex-direction: column;
+        top: 47px;
+        text-align: center;
+        background-color: white;
+        left: -100%;
+        transition: 0.4s ;
+        row-gap: 15px;
+    }
+    nav ul li{
+        margin: 0;
+        padding: 15px 0;
+        justify-items: center;
+    }
+    nav ul li a{
+        /* padding: 15px ; */
+        padding: auto;
+        text-align: center;
+        width: 100%;
+    }
+    .menu.active{
+        left: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+}
